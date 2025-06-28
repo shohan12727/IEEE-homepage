@@ -1,0 +1,286 @@
+ * {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+ body {
+   font-family: "Poppins", sans-serif;
+   font-weight: 100;
+   font-style: normal;
+   margin: 0;
+   padding: 0;
+   background: #f5f7fa;
+ }
+
+ /* text part  */
+
+ .title-container {
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 2rem;
+   text-align: center;
+   margin-bottom: 1rem;
+   word-wrap: break-word;
+ }
+
+ /* Tabs */
+ .tab-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 34%;
+   margin: 40px auto;
+
+   flex-wrap: wrap;
+   gap: 5px;
+   border-radius: 5px;
+   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+   background-color: white;
+ }
+
+ @media (max-width: 768px) {
+   .tab-container {
+     width: 90%;
+   }
+ }
+
+ @media (max-width: 480px) {
+   .tab-container {
+     width: 90%;
+   }
+ }
+
+ .tab-button {
+   padding: 10px 10px;
+   background-color: white;
+   color: rgba(0, 40, 85, 0.9);
+   border-radius: 5px;
+   font-size: 20px;
+   font-weight: 500px;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   text-align: center;
+   transition: all 0.3s ease;
+   /* transition of hover lage  */
+   min-width: 120px;
+   flex: 1 1 auto;
+   text-wrap: balance;
+ }
+
+ .tab-button.active {
+   background-color: rgba(0, 40, 85, 0.9);
+   color: white;
+   border-color: rgba(0, 40, 85, 0.9);
+ }
+
+ /* button section  */
+
+ .button-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .left-buttons {
+   display: flex;
+   margin-left: 2rem;
+   /* margin pore change kora jabe if needed  */
+
+ }
+
+ @media (max-width: 767px) {
+   .left-buttons {
+     display: flex;
+     margin-left: 0;
+
+     /* margin pore change kora jabe if needed  */
+
+   }
+ }
+
+ .btn {
+   padding: 2px 2px;
+   background-color: white;
+   color: rgba(0, 40, 85, 0.9);
+   border-radius: 5px;
+   font-weight: 500px;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   text-align: center;
+   transition: all 0.3s ease;
+   font-size: medium;
+   min-width: 120px;
+   flex: 1 1 auto;
+   text-wrap: balance;
+
+ }
+
+ .btn.active {
+   background-color: rgba(0, 40, 85, 0.9);
+   color: white;
+   border-color: rgba(0, 40, 85, 0.9);
+ }
+
+
+ .right-button {
+   display: flex;
+ }
+
+ .btn-image {
+   background-color: rgba(0, 40, 85, 0.9);
+   color: white;
+   margin-right: 20px;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 6px;
+   cursor: pointer;
+   font-weight: 500;
+   font-size: 16px;
+   transition: background-color 0.3s ease;
+ }
+
+
+ .btn-image:hover {
+   background-color: rgba(0, 40, 85, 0.8);
+ }
+
+
+ /* test - corausol  */
+
+
+ button {
+   padding: 0;
+   margin: 0;
+   border: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--color-white);
+   cursor: pointer;
+   /* position: absolute; */
+   color: var(--color-white);
+   font-size: 3rem;
+   transform: translateY(-50%);
+   top: 50%;
+ }
+
+ ul,
+ li {
+   list-style: none;
+   text-decoration: none;
+   margin: 0;
+   padding: 0;
+ }
+
+ .carousel {
+   width: 100vw;
+   height: 60vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* position: relative; */
+ }
+
+ .carousel_slider {
+   width: 100%;
+   height: 87%;
+   overflow: hidden;
+   /* position: relative; */
+ }
+
+ .content_inner_slider {
+   width: 100%;
+   height: 100%;
+   display: flex;
+ }
+
+ .img {
+   min-width: 100vw;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .prev_button {
+   left: 0;
+ }
+
+ .next_button {
+   right: 0;
+ }
+
+ .dots {
+   display: flex;
+   margin: 1rem 0;
+ }
+
+ .dot {
+   width: 1rem;
+   height: 1rem;
+   border: 1px solid var(--color-text-light);
+   border-radius: 50%;
+   margin: 0 5px;
+   cursor: pointer;
+ }
+
+ .form {
+   display: flex;
+   align-items: center;
+   font-size: 1rem;
+ }
+
+ .auto_slide {}
+
+ /* end carosel  */
+
+ /* video button  */
+
+ .video-button-container {
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 2rem;
+
+ }
+
+ .video-button {
+
+   padding: 10px;
+   background-color: #002855;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   font-size: 16px;
+   border-radius: 5px;
+   cursor: pointer;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+   transition: background-color 0.3s ease;
+ }
+
+ .video-button:hover {
+   background-color: #004080;
+
+ }
+
+
+
+ /* add video  */
+
+ .video-banner {
+   margin: 0;
+   width: 100%;
+   height: 60vh;
+   overflow: hidden;
+ }
+
+ .video-banner video {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+ }
